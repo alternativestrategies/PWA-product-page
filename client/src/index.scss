@@ -1,0 +1,18 @@
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/products';
+@import 'partials/navigation';
+@import 'partials/slideshow';
+@import 'partials/contacts';
+
+@font-face {
+  font-family: "Shamber";
+  src: url(./fonts/Shamber.ttf) format('truetype');
+}
+  
+  //sub titles
+  h2 {
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: .8px;
+}
