@@ -54,6 +54,7 @@ render(){
             <div id="slideshow">
               <SlideItem 
                   img={this.state.slideshow.img}
+                  alt={this.state.slideshow.alt}
                 />  
             </div>
         </div>

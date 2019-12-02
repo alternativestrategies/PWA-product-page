@@ -55,7 +55,7 @@ class ProductPage extends Component {
         <div className="grid">
            {this.state.products.map(p => 
            <div className="grid-item">
-           <img className="grid-image"src={`assets/img/${p.product_img}`} alt="{p.name}"/>
+           <img className="grid-image"src={`assets/img/${p.product_img}`} alt={p.name}/>
            <p className="grid-item-name">
            { p.product_name }
            </p>
