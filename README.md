@@ -1,7 +1,8 @@
-# React App With Authentication using JWT Tokens
+# React PWA (Progressive Web App)
 
-This is an assignment which required a React App to have an authenticated route. Authentication had to be taken care of with JWT Tokens.
-You can find a version of it on [Heroku]("https://peaceful-fjord-66642.herokuapp.com/").
+This is an assignment which required a React App to be transformed into a Progressive Web App. 
+You can find a version of it on [Heroku](arely-pwa.herokuapp.com).
+
 
 ## Installation
 
