@@ -11,6 +11,17 @@ const port = process.env.PORT || 5000;
 app.use(express.urlencoded({ extended: true }));//url encoding parsing middleware
 app.use(express.json());//json parsing middleware
 
+// force https for production
+// code sourced from https://stackoverflow.com/questions/8605720/how-to-force-ssl-https-in-express-js
+// shout out to Walter
+app.use((req, res, next) => {
+    // The 'x-forwarded-proto' check is for Heroku
+    if (!req.secure && req.get('x-forwarded-proto') !== 'https' && process.env.NODE_ENV === "production") {
+      return res.redirect('https://' + req.get('host') + req.url);
+    }
+    next();
+  })
+
 app.use(morgan('dev'));//lets you test your endpoints in your console
 
 app.use('/', express.static(path.join(__dirname, '/client/build')));
