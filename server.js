@@ -13,6 +13,8 @@ app.use(express.json());//json parsing middleware
 
 app.use(morgan('dev'));//lets you test your endpoints in your console
 
+app.use('/', express.static(path.join(__dirname, '/client/build')));
+
 //serves up static sites when in production environment
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
