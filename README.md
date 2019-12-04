@@ -3,11 +3,7 @@
 This is an assignment which required a React App to be transformed into a Progressive Web App. 
 You can find a version of it on [Heroku](arely-pwa.herokuapp.com).
 
-## App Screenshots
-
-These are Lighthouse Audits before and after PWA refactoring:
-
-![](work/audit.png)
+## Screenshots
 
 ![](work/audit2.png)
 
